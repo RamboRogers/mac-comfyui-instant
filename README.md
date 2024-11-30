@@ -4,7 +4,7 @@
 
 This script will install ComfyUI and all dependencies on macOS.  I made this for my own use, but you're welcome to use it.
 
-![Example Output](comfyui01.png)
+
 
 ## Usage
 
@@ -30,6 +30,7 @@ Copy and paste this single line into your terminal:
 5. Launch ComfyUI automatically:
    - Starts the server
    - Opens web interface in default browser
+6. A startup script will also be created in the Local/ComfyUI directory.  Double-clicking this script will also launch ComfyUI and open the web interface in your default browser.
 
 
 > **Note:** Look for this icon on your desktop. Double-clicking it will automatically launch ComfyUI and open the web interface in your default browser for a seamless experience.
@@ -47,3 +48,5 @@ This project is licensed under the GNU General Public License v3.0 (GPL-3.0) - s
 - GitHub: [RamboRogers](https://github.com/RamboRogers)
 - X/Twitter: [@rogerscissp](https://x.com/rogerscissp)
 - Website: [matthewrogers.org](https://matthewrogers.org)
+
+![Example Output](comfyui01.png)
