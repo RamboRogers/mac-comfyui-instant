@@ -11,7 +11,7 @@ This script will install ComfyUI and all dependencies on macOS.  I made this for
 Copy and paste this single line into your terminal:
 
 ```bash
-/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/matt-harvey/instant-comfyui/main/instant-comfyui.sh)"
+/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/RamboRogers/mac-comfyui-instant/refs/heads/main/instant-comfyui.sh)"
 ```
 
 This will:
