@@ -68,8 +68,8 @@ echo "Created LaunchComfyUI.app on your Desktop"
 python main.py &
 
 # Wait for the server to start
-echo "Waiting for ComfyUI to start..."
-sleep 3
+echo "Waiting 30 seconds for ComfyUI to start..."
+sleep 30
 
 # Open the browser
 open "http://127.0.0.1:8188/"
