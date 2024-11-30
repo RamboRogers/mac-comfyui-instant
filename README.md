@@ -4,7 +4,7 @@
 
 This script will install ComfyUI and all dependencies on macOS.  I made this for my own use, but you're welcome to use it.
 
-
+[Using your Mac for Generative AI Locally](https://blog.matthewrogers.org/b/CC5B6654-5B79-427C-AE26-EA337A25FCD4/Using-your-Mac-for-Generative-AI-Locally)
 
 ## Usage
 
