@@ -21,7 +21,7 @@ mkdir Local
 cd Local
 
 # Clone ComfyUI repository
-git Clone https://github.com/comfyanonymous/ComfyUI.git
+git clone https://github.com/comfyanonymous/ComfyUI.git
 
 cd ComfyUI
 
@@ -44,8 +44,7 @@ git clone https://github.com/ltdrdata/ComfyUI-Manager.git
 cd ..
 
 # Create a simple start script for ComfyUI with shebang
-echo '#!/bin/zsh\ncd ~/Local/ComfyUI && source .venv/bin/activate && python main.py' > start_comfyui.sh
-echo "cd ~/Local/ComfyUI && source .venv/bin/activate && python main.py" > start_comfyui.sh
+echo '#!/bin/zsh\ncd ~/Local/ComfyUI && source .venv/bin/activate && python main.py & sleep 3 && open "http://127.0.0.1:8188/"' > start_comfyui.sh
 
 # Make the script executable
 chmod +x start_comfyui.sh
@@ -65,14 +64,19 @@ rm ~/Desktop/LaunchComfyUI.applescript
 
 echo "Created LaunchComfyUI.app on your Desktop"
 
+# Start ComfyUI in the background
+python main.py &
 
-# Run ComfyUI
-python main.py
+# Wait for the server to start
+echo "Waiting for ComfyUI to start..."
+sleep 3
 
-# Wait for 10 seconds
-sleep 10
-
-# Open ComfyUI in browser
+# Open the browser
 open "http://127.0.0.1:8188/"
+
+# Keep the script running
+wait
+
+
 
 
